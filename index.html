@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statements</title>
+</head>
+<body>
+    <script>
+        //task 1
+        console.log("days task");
+        let day=prompt("enter a day");
+       
+       if(day=="monday"){
+           console.log("Start your week strong!");
+       }
+       else if(day=="tuesday"){
+           console.log("keep going!");
+       }
+       else if(day=="wednesday"){
+           console.log("halfway there!");
+       }
+       else if(day=="thursday"){
+           console.log("Almost the weekend!");
+       }
+       else if(day=="friday"){
+           console.log("“Happy Friday!");
+       }
+       else if(day=="saturday"){
+           console.log("Enjoy your weekend!");
+       }
+       else{
+           console.log("Enjoy your weekend!");
+       }
+       //task 2
+       console.log ("traffic lights task");
+       let light=prompt("enter thr traffic light");
+        if(light=="red"){
+            console.log("stop");
+        }
+        else if(light=="yellow"){
+            console.log("ready to go!");
+        }
+        else{
+            console.log("go!");
+        }
+        //task 3
+        console.log("discounts task");
+        let amount=+prompt("enter the amount");
+       
+       if (amount < 50) {
+       console.log("No discount");
+       } 
+       else if (amount >= 50 && amount <= 100) {
+       console.log("5% discount");
+       } 
+       else if (amount >= 101 && amount <= 200) {
+       console.log("10% discount");
+       } 
+       else {
+       console.log("15% discount");
+       }
+       // task 4
+       console.log("menu task");
+       let dish = prompt("Enter the name of the dish:");
+if (dish === "biriyani") {
+   console.log("price = $10") ;
+    } 
+    else if (dish === "shawarma") {
+        console.log("price = $9") ;
+    }
+     else if (dish === "fried rice") {
+        console.log("price = $8") ;
+    }
+     else if (dish === "veg pulao") {
+        console.log("price = $7") ;
+    } else {
+        console.log("Dish not available"); 
+    }
+    // task 5
+    console.log("calculator");
+    let num1 = +prompt("Enter the first number:");
+    let num2 = +prompt("Enter the second number:");
+    let operator = prompt("Enter an operator (+, -, *, /):");
+    switch (operator) {
+    case "+":
+        console.log(num1 + num2) ;
+        break;
+    case "-":
+    console.log(num1 - num2) ;
+        break;
+    case "*":
+    console.log(num1 * num2);
+        break;
+    case "/":
+        if (num2 !== 0) {
+           console.log(num1 / num2);
+        } else {
+            result = "Error: Division by zero";
+        }
+        break;
+}
+    </script>
+</body>
+</html>
